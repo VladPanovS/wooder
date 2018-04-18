@@ -1,0 +1,21 @@
+/*My framework*/
+.f_box-c {
+  display: flex;
+  justify-content: center;
+}
+.f_box-c_c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f_box-vc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.f_box-vc-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

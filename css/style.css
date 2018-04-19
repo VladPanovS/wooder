@@ -64,8 +64,32 @@ a.learn-link::after {
 -----------------------*/
 header {
   height: 100vh;
-  background: url("../img/bg/header_one_bg.png") no-repeat center top;
+  color: yellow;
+}
+.nav-box {
+  position: fixed;
+  height: 10%;
+  width: 100%;
+}
+.header-slider-first {
+  background: url("../img/bg/header_one_bg.png") no-repeat center bottom;
   background-size: cover;
+  display: flex!important;
+  height: 100%;
+}
+.header-slider-first h1 {
+  margin-bottom: 1.75em;
+}
+.header-slider-first>div {
+  flex-direction: column;
+  position: relative;
+}
+img.scroll-pic {
+  width: 30%;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: -60%;
+  left: -10%;
 }
 /*---PRODUCTS---*/
 .products ul {
@@ -94,6 +118,30 @@ header {
 }
 .number span {
   color: #bea67c;
+}
+/*Product background letters*/
+.products {
+  position: relative;
+}
+.f-let {
+  position: absolute;
+  top: -9rem;
+  left: 0.6rem;
+  }
+.deco-let {
+  position: absolute;
+  bottom: 15rem;
+  left: 0rem;
+  }
+.d-let {
+  position: absolute;
+  top: 30rem;
+  right: 0rem;
+}
+.fur-let {
+  position: absolute;
+  top: 15rem;
+  right: 0rem;
 }
 /*First product list*/
 .product-list-one li:first-child h2, .product-list-one li:first-child p {
@@ -129,7 +177,7 @@ header {
 .product-list-one>li .number {
   position: absolute;
   bottom: -5.6em;
-  left: -5em;
+  left: -5%;
 }
 /*second product list*/
 ul.product-list-two {
@@ -168,7 +216,7 @@ ul.product-list-two {
 .product-list-two>li .number {
   position: absolute;
   bottom: -7.6em;
-  right: -3em;
+  right: -3%;
 }
 /*---QUALITY---*/
 .quality {
@@ -221,6 +269,7 @@ ul.product-list-two {
   position: absolute;
   align-self: center;
   text-align: center;
+  top: 39%;
 }
 .quality-list li p::before {
   content: "";

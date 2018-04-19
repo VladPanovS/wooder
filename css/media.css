@@ -1,6 +1,8 @@
 @media (max-width: 768px) {
     /*Products*/
-
+    .fur-let, .d-let, .deco-let, .f-let {
+      display: none;
+    }
     /*Quality*/
     .quality-list li {
       margin: 0.3em;

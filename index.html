@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="#" type="image/png">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
     <title>WOODER</title>
     <!--SLICK Slider-->
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
@@ -22,6 +22,11 @@
   </head>
 
   <body>
+    <div id="preloader" class="f_box-c_c">
+      <div class="load">
+
+      </div>
+    </div>
     <a id="top"></a>
     <header>
       <div class="nav-box">
@@ -74,7 +79,7 @@
     <main>
       <section class="products">
         <a id="product"></a>
-        <ul class="product-list-one f_box-c_c">
+        <ul class="product-list-one f_box-c_c wow fadeInLeft" data-wow-offset="10">
           <li>
             <h2 class="title">Furniture</h2>
             <p> Wooder utilizes materials otherwise left behind, ren-
@@ -91,7 +96,7 @@
             </div>
           </li>
         </ul>
-        <ul class="product-list-two f_box-c_c">
+        <ul class="product-list-two f_box-c_c wow fadeInRight" data-wow-offset="10">
           <li>
             <div>
               <img src="img/pic/product_two.png" alt="decor">
@@ -119,7 +124,7 @@
         <div class="quality-list-wrp">
           <p>We create unique design objects made of rare wood, specially under the order.
             <br>Look at the short video about our work.</p>
-          <ul class="quality-list f_box-c">
+          <ul class="quality-list f_box-c wow fadeIn" data-wow-offset="10">
             <li>
               <div class="f_box-c">
                 <img src="img/pic/quality_list_one.png" alt="innovate pic">
@@ -146,7 +151,7 @@
       </section>
       <section class="video f_box-vc-c">
         <div class="video-content f_box-vc-c">
-          <ul>
+          <ul class="animated wow zoomIn" data-wow-offset="10">
             <li><h2 class="video-title">we Do the design <br> of any complexity</h2></li>
             <li><p>This is a team of professionals that make the furniture and
               <br>wood décor high standard. Creating modern designs.
@@ -159,12 +164,12 @@
       <section class="about">
         <a id="about"></a>
         <ul class="about-list f_box-c_c">
-          <li>
+          <li class="wow fadeInLeft" data-wow-offset="10">
             <div>
               <img src="img/pic/about_pic.png" alt="about picture">
             </div>
           </li>
-          <li>
+          <li class="wow fadeInRight" data-wow-offset="10">
             <h2 class="title">About us</h2>
             <p>We are a team of professionals in the wood pro-
               <br>cessing and the creation of wooden furniture
@@ -192,9 +197,11 @@
     </body>
     <!---SCRIPTS--->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js" integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </html>

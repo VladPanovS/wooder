@@ -1,4 +1,5 @@
 $(document).ready(function(){
+   new WOW().init();
   $("#navmenu"), $("#menu").on("click","a", function (event) {
       event.preventDefault();
       var id  = $(this).attr('href'),
@@ -10,7 +11,7 @@ $(document).ready(function(){
     dots: true,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 6300,
     infinite: true,
   });
 });

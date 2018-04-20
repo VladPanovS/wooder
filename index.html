@@ -17,21 +17,43 @@
     <link rel="stylesheet" type="text/css" href="css/frame.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/animate.css">-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
   </head>
 
   <body>
+    <a id="top"></a>
     <header>
       <div class="nav-box">
         <div class="nav-menu">
-
+          <input type="checkbox" id="hmt" class="checkbox_trigger">
+          <label for="hmt">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <p>menu</p>
+          <ul class="drop_menu" id="menu">
+            <li><a href="#top" class="link">Home</a></li>
+            <li><a href="#product" class="link">Products</a></li>
+            <li><a href="#about" class="link">About</a></li>
+         </ul>
         </div>
-        <nav>
-
+        <nav class="f_box-c_c" id="navmenu">
+          <img src="img/logo/logo_main.png" alt="logo wooder">
+          <a href="#top" class="link">Home</a>
+          <a href="#product" class="link">Products</a>
+          <a href="#about" class="link">About</a>
         </nav>
         <div class="nav-leng">
-
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              EN
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">RU</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="header-slider">
@@ -44,13 +66,14 @@
             <img src="img/icons/header_scroll.png" alt="scroll" class="scroll-pic">
           </div>
         </div>
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
+        <div class="header-slider-first f_box-vc-c">second slide</div>
+        <div class="header-slider-first f_box-vc-c">third slide</div>
+        <div class="header-slider-first f_box-vc-c">fourth slide</div>
       </div>
     </header>
     <main>
       <section class="products">
+        <a id="product"></a>
         <ul class="product-list-one f_box-c_c">
           <li>
             <h2 class="title">Furniture</h2>
@@ -129,11 +152,12 @@
               <br>wood décor high standard. Creating modern designs.
               <br>Adhering to the global quality standards. And we are
               <br>doing work with love.</p></li>
-              <li><a href="#" class="white_but"><i class="fas fa-play video_but"></i>Watch video</a></li>
+              <li><a href="#" class="white_but" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-play video_but"></i>Watch video</a></li>
           </ul>
         </div>
       </section>
       <section class="about">
+        <a id="about"></a>
         <ul class="about-list f_box-c_c">
           <li>
             <div>
@@ -153,10 +177,19 @@
     <footer class="f_box-c_c">
       <div>
         <span>(c)2016 Wooder</span>
-        <img src="img/logo/logo_footer.png" alt="logo wooder">
+        <img src="img/logo/logo_main.png" alt="logo wooder">
         <i></i>
       </div>
     </footer>
+    <!-- Large modal -->
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/i4pAlWhAxW0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </body>
     <!---SCRIPTS--->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -164,5 +197,4 @@
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js" integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-  </body>
   </html>

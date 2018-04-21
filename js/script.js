@@ -1,6 +1,12 @@
 $(document).ready(function(){
    new WOW().init();
-  $("#navmenu"), $("#menu").on("click","a", function (event) {
+  $("#navmenu").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  })
+  $("#menu").on("click","a", function (event) {
       event.preventDefault();
       var id  = $(this).attr('href'),
           top = $(id).offset().top;
@@ -10,7 +16,7 @@ $(document).ready(function(){
     arrows: false,
     dots: true,
     fade: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 6300,
     infinite: true,
   });

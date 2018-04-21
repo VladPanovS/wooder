@@ -69,7 +69,7 @@ a.link {
   font-weight: 700;
   text-transform: uppercase;
   color: #8a8988;
-  font-size: 0.9em;
+  font-size: 0.8em;
   letter-spacing: 0.18em;
   transition: color 0.3s linear;
 }
@@ -220,6 +220,9 @@ header {
 .nav-leng {
   margin-right: 1em;
 }
+.nav-leng a {
+  margin-right: 0.3em;
+}
 nav a {
   margin: 0 5em;
 }
@@ -253,9 +256,12 @@ color: #8a8988;
 .header-slider-first h1 {
   margin-bottom: 1.75em;
 }
-.header-slider-first>div {
+.header-slider-first div:first-child  {
   flex-direction: column;
   position: relative;
+  }
+.header-slider-first img {
+  width: 100%;
 }
 img.scroll-pic {
   width: 30%;
@@ -263,6 +269,11 @@ img.scroll-pic {
   position: absolute;
   bottom: -60%;
   left: -10%;
+}
+.share-box {
+  position: absolute;
+  bottom: 10px;
+  right: 3%;
 }
 /*---PRODUCTS---*/
 .products ul {
@@ -442,9 +453,8 @@ ul.product-list-two {
 }
 .quality-list li>div a{
   position: absolute;
-  align-self: center;
-  text-align: center;
   top: 39%;
+  left: 39%;
 }
 .quality-list li p::before {
   content: "";

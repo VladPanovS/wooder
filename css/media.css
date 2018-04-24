@@ -45,7 +45,16 @@
     footer div {
       justify-content: center;
     }
+    /**/
     .slick-dots {
-      display: none!important;
+      bottom: 0;
+      left: 25%;
+      transform: none;
+    }
+    .header-slider-first .slide-number {
+      top: 90%;
+      /* bottom: 0; */
+      left: 7%;
+      transform: none;
     }
 }
